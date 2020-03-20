@@ -44,7 +44,7 @@ if ($data = $form->get_data()) {
         $msg = sprintf("%s %s was enrolled as %s in category %s",
                        $user->firstname,
                        $user->lastname,
-                       $role->name,
+                       $role->shortname,
                        $categoryName);
         \core\notification::success($msg);
     }
